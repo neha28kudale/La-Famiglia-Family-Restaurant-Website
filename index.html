@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Famiglia — Fine Family Dining</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#" class="nav-logo">La <span>Famiglia</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">Our Story</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#order">Order Online</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#booking" class="nav-cta">Reserve a Table</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMobileMenu()">Our Story</a>
+  <a href="#menu" onclick="closeMobileMenu()">Menu</a>
+  <a href="#order" onclick="closeMobileMenu()">Order Online</a>
+  <a href="#gallery" onclick="closeMobileMenu()">Gallery</a>
+  <a href="#booking" onclick="closeMobileMenu()">Reserve a Table</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-pattern"></div>
+  <div class="hero-content">
+    <div class="hero-badge">Established 1987 · Family Owned</div>
+    <h1>
+      Where Every Meal
+      <em>Tells a Story</em>
+    </h1>
+    <p class="hero-sub">Authentic family recipes passed down through generations, served with warmth and love in the heart of the city.</p>
+    <div class="hero-actions">
+      <a href="#menu" class="btn-primary">
+        <span>Explore Our Menu</span>
+        <span>→</span>
+      </a>
+      <a href="#booking" class="btn-outline">
+        <span>Book a Table</span>
+      </a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    Scroll to Explore
+  </div>
+  <div class="hero-float">
+    <div class="hero-stat">
+      <div class="hero-stat-num">37</div>
+      <div class="hero-stat-label">Years of Joy</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">4.9</div>
+      <div class="hero-stat-label">Star Rating</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">85+</div>
+      <div class="hero-stat-label">Menu Items</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">∞</div>
+      <div class="hero-stat-label">Memories Made</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about-grid">
+    <div class="about-visual reveal-left">
+      <div class="about-img-main">
+        <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+          <circle cx="60" cy="60" r="50" stroke="white" stroke-width="1.5"/>
+          <path d="M60 20 C60 20 35 40 35 65 C35 80 46 90 60 90 C74 90 85 80 85 65 C85 40 60 20 60 20Z" stroke="white" stroke-width="1.5" fill="none"/>
+          <line x1="60" y1="20" x2="60" y2="95" stroke="white" stroke-width="1" opacity="0.5"/>
+        </svg>
+      </div>
+      <div class="about-img-accent">
+        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+          <path d="M20 60 Q40 20 60 60" stroke="white" stroke-width="2" fill="none"/>
+          <circle cx="40" cy="35" r="8" stroke="white" stroke-width="1.5" fill="none"/>
+        </svg>
+      </div>
+      <div class="about-badge-float">
+        <strong>4.9★</strong>
+        <span>2,400+ Reviews</span>
+      </div>
+    </div>
+    <div class="about-text reveal-right">
+      <div class="section-label">Our Heritage</div>
+      <h2 class="section-title">Cooking from the <em>Heart</em> Since 1987</h2>
+      <p style="margin-top:1.5rem">What started as Nonna Rosa's kitchen table has grown into a beloved dining destination, but our recipes and values remain unchanged. Every dish is crafted with the same love, patience, and locally-sourced ingredients as the first day we opened.</p>
+      <p>We believe that great food brings families together. That's why every corner of La Famiglia is designed to feel like home — warm, welcoming, and filled with the aroma of something wonderful.</p>
+      <div class="about-features">
+        <div class="about-feature">
+          <div class="feature-icon">🌿</div>
+          <div class="feature-text">
+            <strong>Farm to Table</strong>
+            <span>Locally sourced, seasonal ingredients</span>
+          </div>
+        </div>
+        <div class="about-feature">
+          <div class="feature-icon">👨‍🍳</div>
+          <div class="feature-text">
+            <strong>Master Chefs</strong>
+            <span>Trained in traditional Italian kitchens</span>
+          </div>
+        </div>
+        <div class="about-feature">
+          <div class="feature-icon">🏡</div>
+          <div class="feature-text">
+            <strong>Family Owned</strong>
+            <span>Three generations of hospitality</span>
+          </div>
+        </div>
+        <div class="about-feature">
+          <div class="feature-icon">🍷</div>
+          <div class="feature-text">
+            <strong>Curated Cellar</strong>
+            <span>200+ wines from boutique vineyards</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="menu" id="menu">
+  <div class="menu-header reveal">
+    <div class="section-label">Chef's Selection</div>
+    <h2 class="section-title">Our <em>Signature</em> Dishes</h2>
+  </div>
+  <div class="menu-tabs reveal">
+    <button class="tab-btn active" data-category="all">All</button>
+    <button class="tab-btn" data-category="starters">Starters</button>
+    <button class="tab-btn" data-category="pasta">Pasta & Risotto</button>
+    <button class="tab-btn" data-category="mains">Mains</button>
+    <button class="tab-btn" data-category="desserts">Desserts</button>
+  </div>
+  <div class="menu-grid" id="menuGrid"></div>
+</section>
+
+<!-- ORDER ONLINE -->
+<section class="order-section" id="order">
+  <div class="order-grid">
+    <div class="order-info reveal-left">
+      <div class="section-label">Online Ordering</div>
+      <h2>Restaurant Quality <br><em style="font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--terracotta)">at Your Doorstep</em></h2>
+      <p>Enjoy La Famiglia's signature dishes from the comfort of your home. We deliver within a 10km radius, carefully packaged to preserve every flavour.</p>
+      <div class="order-steps">
+        <div class="order-step">
+          <div class="step-num">1</div>
+          <div class="step-text">
+            <strong>Choose Your Dishes</strong>
+            <span>Select from our curated online menu</span>
+          </div>
+        </div>
+        <div class="order-step">
+          <div class="step-num">2</div>
+          <div class="step-text">
+            <strong>Confirm & Pay</strong>
+            <span>Secure checkout in under a minute</span>
+          </div>
+        </div>
+        <div class="order-step">
+          <div class="step-num">3</div>
+          <div class="step-text">
+            <strong>We Deliver</strong>
+            <span>Fresh to your door in 45–60 minutes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reveal-right">
+      <div class="form-card" style="position:relative">
+        <div class="form-title">Quick Order</div>
+        <div class="form-subtitle">Add items and place your order below</div>
+        <div class="order-items" id="orderItems"></div>
+        <div class="order-total">
+          <span>Total</span>
+          <span id="orderTotal">₹0.00</span>
+        </div>
+        <form id="orderForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Name <span class="required">*</span></label>
+              <input type="text" class="form-control" id="orderName" placeholder="Jane Smith">
+              <div class="error-msg" id="orderNameErr">Please enter your name</div>
+            </div>
+            <div class="form-group">
+              <label>Phone Number <span class="required">*</span></label>
+              <input type="tel" class="form-control" id="orderPhone" placeholder="+91 98765 43210">
+              <div class="error-msg" id="orderPhoneErr">Enter a valid phone number</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Delivery Address <span class="required">*</span></label>
+            <textarea class="form-control" id="orderAddress" placeholder="123 Main Street, City, PIN" rows="2"></textarea>
+            <div class="error-msg" id="orderAddressErr">Please enter your delivery address</div>
+          </div>
+          <div class="form-group">
+            <label>Special Instructions</label>
+            <input type="text" class="form-control" id="orderNotes" placeholder="Allergies, dietary needs...">
+          </div>
+          <button type="submit" class="form-submit"><span>Place Order →</span></button>
+        </form>
+        <div class="success-overlay" id="orderSuccess">
+          <div class="success-icon">🎉</div>
+          <h3>Order Placed!</h3>
+          <p>Your order is being prepared. Estimated delivery: 45–60 mins</p>
+          <button onclick="resetOrder()">Place Another Order</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <div class="gallery-header reveal">
+    <div class="section-label">Visual Stories</div>
+    <h2 class="section-title">A Glimpse of <em>La Famiglia</em></h2>
+  </div>
+  <div class="gallery-grid reveal">
+    <div class="gallery-item">🍝<div class="gallery-overlay"><span>Signature Pasta</span></div></div>
+    <div class="gallery-item">🥗<div class="gallery-overlay"><span>Garden Fresh</span></div></div>
+    <div class="gallery-item">🍷<div class="gallery-overlay"><span>Wine Cellar</span></div></div>
+    <div class="gallery-item">🍕<div class="gallery-overlay"><span>Wood-Fired Pizza</span></div></div>
+    <div class="gallery-item">🍮<div class="gallery-overlay"><span>Artisan Desserts</span></div></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="testimonials-header reveal">
+    <div class="section-label">Guest Reviews</div>
+    <h2 class="section-title">What Our <em>Families</em> Say</h2>
+  </div>
+  <div class="testimonials-track-outer reveal">
+    <div class="testimonials-track" id="testimonialsTrack">
+      <!-- Injected by JS -->
+    </div>
+  </div>
+  <div class="testimonial-nav">
+    <button class="nav-arrow" id="prevArrow">←</button>
+    <div id="testimonialDots"></div>
+    <button class="nav-arrow" id="nextArrow">→</button>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="booking" id="booking">
+  <div class="booking-grid">
+    <div class="booking-info reveal-left">
+      <div class="section-label">Reservations</div>
+      <h2>Reserve Your <em>Perfect Evening</em></h2>
+      <p>Whether it's a birthday, anniversary, or a simple family dinner, we'll make it unforgettable. Tables fill quickly — book ahead to avoid disappointment.</p>
+      <div class="booking-details">
+        <div class="booking-detail">
+          <div class="detail-icon">🕐</div>
+          <div class="detail-text">
+            <strong>Opening Hours</strong>
+            <span>Mon–Thu: 12:00 – 22:00<br>Fri–Sun: 11:00 – 23:00</span>
+          </div>
+        </div>
+        <div class="booking-detail">
+          <div class="detail-icon">📍</div>
+          <div class="detail-text">
+            <strong>Our Location</strong>
+            <span>42 Rosewood Lane, Old City<br>Near Central Park</span>
+          </div>
+        </div>
+        <div class="booking-detail">
+          <div class="detail-icon">📞</div>
+          <div class="detail-text">
+            <strong>Call Us</strong>
+            <span>+91 22 4567 8900<br>reservations@lafamiglia.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reveal-right">
+      <div class="form-card" style="position:relative">
+        <div class="form-title">Make a Reservation</div>
+        <div class="form-subtitle">We'll confirm your booking within 30 minutes</div>
+        <form id="bookingForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Full Name <span class="required">*</span></label>
+              <input type="text" class="form-control" id="bName" placeholder="Your full name">
+              <div class="error-msg" id="bNameErr">Please enter your name</div>
+            </div>
+            <div class="form-group">
+              <label>Email Address <span class="required">*</span></label>
+              <input type="email" class="form-control" id="bEmail" placeholder="you@example.com">
+              <div class="error-msg" id="bEmailErr">Enter a valid email</div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Date <span class="required">*</span></label>
+              <input type="date" class="form-control" id="bDate">
+              <div class="error-msg" id="bDateErr">Please select a date</div>
+            </div>
+            <div class="form-group">
+              <label>Time <span class="required">*</span></label>
+              <select class="form-control" id="bTime">
+                <option value="">Select time</option>
+                <option>12:00 PM</option><option>12:30 PM</option>
+                <option>1:00 PM</option><option>1:30 PM</option>
+                <option>2:00 PM</option><option>6:00 PM</option>
+                <option>6:30 PM</option><option>7:00 PM</option>
+                <option>7:30 PM</option><option>8:00 PM</option>
+                <option>8:30 PM</option><option>9:00 PM</option>
+              </select>
+              <div class="error-msg" id="bTimeErr">Please select a time</div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Number of Guests <span class="required">*</span></label>
+              <select class="form-control" id="bGuests">
+                <option value="">How many guests?</option>
+                <option>1 Guest</option><option>2 Guests</option>
+                <option>3 Guests</option><option>4 Guests</option>
+                <option>5 Guests</option><option>6 Guests</option>
+                <option>7–10 Guests</option><option>10+ Guests</option>
+              </select>
+              <div class="error-msg" id="bGuestsErr">Please select guest count</div>
+            </div>
+            <div class="form-group">
+              <label>Occasion</label>
+              <select class="form-control" id="bOccasion">
+                <option value="">Select occasion</option>
+                <option>Birthday</option><option>Anniversary</option>
+                <option>Date Night</option><option>Family Dinner</option>
+                <option>Business Lunch</option><option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Special Requests</label>
+            <textarea class="form-control" id="bRequests" placeholder="Dietary needs, seating preferences, decorations..."></textarea>
+          </div>
+          <button type="submit" class="form-submit"><span>Confirm Reservation →</span></button>
+        </form>
+        <div class="success-overlay" id="bookingSuccess">
+          <div class="success-icon">🥂</div>
+          <h3>Reservation Confirmed!</h3>
+          <p>We'll send you a confirmation email shortly. See you soon!</p>
+          <button onclick="resetBooking()">Make Another Booking</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#" class="nav-logo">La <span>Famiglia</span></a>
+      <p>Where every meal is a memory. Family-owned and operated since 1987, serving authentic Italian cuisine with love and tradition.</p>
+      <div class="footer-social">
+        <a href="#" class="social-link">𝕏</a>
+        <a href="#" class="social-link">f</a>
+        <a href="#" class="social-link">in</a>
+        <a href="#" class="social-link">▶</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#about">Our Story</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#order">Order Online</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#booking">Reservations</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Dining</h4>
+      <ul>
+        <li><a href="#">Private Events</a></li>
+        <li><a href="#">Catering</a></li>
+        <li><a href="#">Gift Cards</a></li>
+        <li><a href="#">Loyalty Program</a></li>
+        <li><a href="#">Wine Pairing</a></li>
+      </ul>
+    </div>
+    <div class="footer-col footer-hours">
+      <h4>Opening Hours</h4>
+      <p>
+        <strong>Monday – Thursday</strong><br>12:00 PM – 10:00 PM<br><br>
+        <strong>Friday – Saturday</strong><br>11:00 AM – 11:00 PM<br><br>
+        <strong>Sunday</strong><br>11:00 AM – 9:00 PM
+      </p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 La Famiglia. All rights reserved.</p>
+    <p><a href="#">Privacy Policy</a> · <a href="#">Terms of Service</a></p>
+  </div>
+</footer>
+
+<!-- TOAST -->
+<div class="toast" id="toast">
+  <span class="toast-icon" id="toastIcon">✓</span>
+  <span id="toastMsg">Added to cart</span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
