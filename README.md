@@ -80,18 +80,6 @@ lafamiglia-restaurant/
 └── README.md
 
 ```
-
----
-
-## 🚀 Live Demo
-
-
-
----
-
-## 📸 Screenshots
-
-
 ---
 
 
